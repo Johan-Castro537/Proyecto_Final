@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class Estudiante extends Persona {
     private int semestre;
-    private Double[][] notas; // 10 semestres maximo, 20 materias maximo por semestre como está en la guía
+    private Double[][] notas; // 10 semestres maximo, 20 materias por semestre
     private LinkedList<String> historialMaterias;
 
     public Estudiante(String id, String nombre, String email, int semestre) {
@@ -30,7 +30,6 @@ public class Estudiante extends Persona {
         return historialMaterias;
     }
 
-    // calcula el promedio recorriendo la matriz de notas
     public double calcularPromedioAcumulado() {
         double suma = 0;
         int cantidadNotas = 0;
